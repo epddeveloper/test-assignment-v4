@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Main Page</title>
+        <link rel="stylesheet" href="./css/styles.css"/>
+        <script type="module" src="./js/script.js" defer></script>
+    </head>
+    <body>
+        <div id="root" class="widget-container">
+            <div class="widget-container__widget" widget="widgets/a">
+                <div  class="widget-container__widget" widget="widgets/b"></div>
+            </div>
+            <div></div>
+            <div class="widget-container__widget" widget="widgets/c"></div>
+        </div>
+        <div class="actions-container">
+            <button class="actions-container__button actions-container__button--init" id="init">Init</button>
+            <button class="actions-container__button actions-container__button--destroy" id="destroy">Destroy</button>
+            <button class="actions-container__button actions-container__button--done" id="done">Done</button>
+            <button class="actions-container__button actions-container__button--fail" id="fail">Fail</button>
+        </div>
+
+        <div id="info" class="info-container">
+            <h1 class="info-container__header">Selected Node Info:</h1>
+            <p class="info-container__row"><b>Relative node: </b><span id="nodeSelector"></span></p>
+            <div class="info-container__row">
+                <p><b>Node Info: </b></p><pre><code id="nodeInfo"></code></pre>
+            </div>
+        </div>
+    </body>
+</html>
