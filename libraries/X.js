@@ -1,7 +1,4 @@
 class X {
-    // <!--    TODO Kilka testów jednostkowych i przesłanie rozwiązania na GitHub (niekoniecznie na głównym koncie) będą mile widziane.-->
-    // TODO to skakanie strony gdy sie pojawia info
-
     constructor(resolver) {
         this.resolver = resolver || (path => import(path));
         this.initializedWidgets = new Map();
